@@ -73,30 +73,30 @@ export default function Detail() {
         <div className='flex flex-col sm:flex-row justify-between lg:justify-between sm:items-center h-full w-full'>
           {/* the flag image */}
           <img
-            src={detail.flag}
+            src={detail?.flag}
             className='object-cover sm:scale-y-180 md:scale-y-120 lg:scale-100 w-full sm:w-[40%] h-full'
-            alt={`${detail.name} flag`}
+            alt={`${detail?.name} flag`}
           />
           {/* details */}
           <div className='flex flex-col gap-y-6 sm:w-[50%] w-full mt-5 lg:mt-0'>
-            <h1 className='text-2xl font-bold'>{detail.name}</h1>
+            <h1 className='text-2xl font-bold'>{detail?.name}</h1>
             <div className='flex flex-col sm:flex-row sm:justify-between gap-y-6 lg:gap-y-0'>
               <div className='flex flex-col gap-y-2'>
-                {info("Native Name", detail.nativeName)}
-                {info("Population", detail.population.toLocaleString())}
-                {info("Region", detail.region)}
-                {info("Sub Region", detail.subregion)}
-                {info("Capital", detail.capital)}
+                {info("Native Name", detail?.nativeName)}
+                {info("Population", detail?.population.toLocaleString())}
+                {info("Region", detail?.region)}
+                {info("Sub Region", detail?.subregion)}
+                {info("Capital", detail?.capital)}
               </div>
               <div className='flex flex-col gap-y-2'>
                 {info("Top Level Domain", detail.topLevelDomain)}
                 {info(
                   "Currencies",
-                  detail.currencies.map((currency) => currency.name),
+                  detail.currencies?.map((currency) => currency.name),
                 )}
                 {info(
                   "Language",
-                  detail.languages.map(({ name }) => name),
+                  detail.languages?.map(({ name }) => name),
                 )}
               </div>
             </div>
