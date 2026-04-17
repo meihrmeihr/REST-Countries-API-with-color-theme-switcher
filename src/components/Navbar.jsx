@@ -14,6 +14,7 @@ export default function Navbar() {
       <h1 className='md:text-xl font-bold'>Where in the world</h1>
       <button
         className='flex justify-center items-center gap-2 font-semibold text-sm md:text-base'
+        type='button'
         onClick={changeColor}
       >
         <svg
