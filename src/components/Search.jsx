@@ -47,6 +47,7 @@ export default function Search({ setRegion, setSearchForCountry }) {
         <div className='relative h-14'>
           <button
             className={`${isDark ? "bg-[#2b3945] fill-white" : "bg-white fill-black shadow"} flex justify-center items-center gap-x-2 p-4 rounded-sm w-48 mb-2`}
+            type='button'
             onClick={() => setIsSelecting((prevOption) => !prevOption)}
           >
             Filter by Region
