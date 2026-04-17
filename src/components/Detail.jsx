@@ -25,7 +25,7 @@ export default function Detail() {
 
   function borderCountry() {
     return detail.borders?.map((border) => {
-      if (!border) return <span className='text-gray-400 bg'>no border</span>;
+      if (!border) return <span key='1' className='text-gray-400 bg'>no border</span>;
 
       return (
         <Link
